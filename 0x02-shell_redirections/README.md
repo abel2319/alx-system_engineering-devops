@@ -7,3 +7,4 @@
 6-third_line : to display the third lines of files /etc/passwd
 8-cwd_state : to wrrite the result of ls -la in a file and create it if it doesn't exist
 9-duplicate_last_line : duplicate last line of a file
+10-no_more_js : delete all files in current directory and suddirectories
