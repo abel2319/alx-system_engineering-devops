@@ -9,3 +9,4 @@
 9-duplicate_last_line : duplicate last line of a file
 10-no_more_js : delete all files in current directory and suddirectories
 11-directories : print the number of directories and subdirectories
+12-newest_files : display the 10 newest files in the current directory
