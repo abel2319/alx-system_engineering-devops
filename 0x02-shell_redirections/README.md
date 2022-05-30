@@ -5,3 +5,4 @@
 4-lastline : to see the ten last liines of files /etc/passwd
 4-lastline : to see the ten first liines of files /etc/passwd
 6-third_line : to display the third lines of files /etc/passwd
+8-cwd_state : to wrrite the result of ls -la in a file and create it if it doesn't exist
