@@ -4,3 +4,4 @@
 3-twofiles : to see the content of files /etc/passwd and /etc/hosts
 4-lastline : to see the ten last liines of files /etc/passwd
 4-lastline : to see the ten first liines of files /etc/passwd
+6-third_line : to display the third lines of files /etc/passwd
