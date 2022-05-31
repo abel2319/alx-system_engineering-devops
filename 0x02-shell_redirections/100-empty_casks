@@ -1,2 +1,2 @@
 #!/bin/bash
-find  /tmp -type f -empty | find  /tmp -type d -empty
+find . -empty -printf "%f\n"
