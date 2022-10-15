@@ -2,5 +2,4 @@
 #Bash script that kills the process 7-highlander.
 
 
-son=$(pgrep -f 7-heghlander)
-pkill -f -SIGKILL "$son"
+pkill -f -SIGKILL 7-highlander
