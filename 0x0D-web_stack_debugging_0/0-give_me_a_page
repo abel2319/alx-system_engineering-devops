@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 #command(s) you used to fix the issue in your answer file.
 
-curl -L 0:8080
+
+echo "ServerName localhost" >> /etc/apache2.conf
+service apache2 start
