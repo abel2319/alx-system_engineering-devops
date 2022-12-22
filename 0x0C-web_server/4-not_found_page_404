@@ -18,8 +18,10 @@ printf %s "server {
 	root /var/www/html;
 	index index.html index.htm index.nginx-debian.html;
 	server_name _;
+
+	error_page 404 /no_found.html;
 	location = /xyz {
-		return 404 /no_found.html;
+		root /var/www/html;
 	}
 }" > /etc/nginx/sites-available/default
 
