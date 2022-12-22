@@ -6,7 +6,7 @@ apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 
 mkdir -p /var/www/html
-chown -R $USER:$USER /var/html
+chown -R $USER:$USER /var/www/html
 
 echo 'Hello World!' > /var/www/html/index.html
 
@@ -19,6 +19,6 @@ printf %s "server {
 	location / {
 		try_files \$uri \$uri/ =404;
 	}
-}" > /etc/nginx/sites-avaible/default
+}" > /etc/nginx/sites-available/default
 
 service nginx start
