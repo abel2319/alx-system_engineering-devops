@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#In this first task you need to configure web-02 to be identical to web-01. Fortunately, you built a Bash script during your web server project, and they’ll now come in handy to easily configure web-02. Remember, always try to automate your work!
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+
+mkdir -p /var/www/html
+chown -R $USER:$USER /var/www/html
+
+echo 'Hello World!' > /var/www/html/index.html
+echo "Ceci n'est pas une page" > /var/www/html/no_found.html
+
+printf "%s" "server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/html;
+	index index.html index.htm index.nginx-debian.html;
+	server_name _;
+
+	add_header X-Served-By $HOSTNAME;
+
+	location = /redirect_me/ {
+		return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+	}
+
+	error_page 404 /no_found.html;
+	location = /xyz {
+		root /var/www/html;
+	}
+}" > /etc/nginx/sites-available/default
+
+service nginx restart
