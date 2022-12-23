@@ -13,8 +13,8 @@ printf "%s" "frontend http_front
 
 backend http_back
    balance roundrobin
-   server 65946-web-01 3.86.13.76:80 check
-   server 65946-web-02 54.90.47.244:80 check
+   server web-01 3.86.13.76:80 check
+   server web-02 54.90.47.244:80 check
 " > /etc/haproxy/haproxy.cfg
 
 service haproxy start
