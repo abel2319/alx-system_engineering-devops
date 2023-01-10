@@ -2,11 +2,11 @@
 #install the ufw firewall and setup a few rules on web-01
 
 apt update && apt-get -y install ufw
-sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
+#sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
 ufw disable
 ufw default deny incoming
 ufw default allow outgoing
-ufw allow 22
-ufw allow 443
-ufw allow 80
+ufw allow 22/tcp
+ufw allow 443/tcp
+ufw allow 80/tcp
 ufw enable
