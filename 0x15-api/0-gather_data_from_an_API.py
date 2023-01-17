@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Python script that, using this REST API,
 for a given employee ID, returns information
-about his/her TODO list progress."""
-
+about his/her TODO list progress.
+"""
 import requests
 from sys import argv
 
@@ -20,5 +20,4 @@ tasks_done = [task for task in dico2 if task.get('completed') is True]
 print('Employee {} is done with tasks({}/{}):'
       .format(dico.get('name'), len(tasks_done), len(dico2)))
 
-for task in tasks_done:
-    print('\t {}'.format(task.get('title')))
+for task in tasks_done: print('\t {}'.format(task.get('title')))
