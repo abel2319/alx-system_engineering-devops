@@ -10,6 +10,7 @@ response2 = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos'
                          .format(argv[1]))
 
 dico = response.json()
+
 dico2 = response2.json()
 
 tasks_done = [task for task in dico2 if task.get('completed') is True]
