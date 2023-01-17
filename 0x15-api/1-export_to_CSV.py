@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python script that, using this REST API """
+"""script to export data in the CSV format"""
 import requests
 from sys import argv
 
@@ -19,8 +19,3 @@ with open(argv[1] + ".csv", "a") as file:
         file.write('"{},"{}","{}","{}"\n'
                    .format(argv[1], dico.get('name'),
                            task.get('completed'), task.get('title')))
-
-"""print('Employee {} is done with tasks({}/{}):'
-      .format(dico.get('name'), len(tasks_done), len(dico2)))
-
-to_save = ''"""
