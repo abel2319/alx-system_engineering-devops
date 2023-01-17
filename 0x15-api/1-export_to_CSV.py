@@ -4,10 +4,10 @@ import requests
 from sys import argv
 
 
-response = requests.get('https://jsonplaceholder.typicode.com/users/' +
-                        argv[1])
-response2 = requests.get('https://jsonplaceholder.typicode.com/users/' +
-                         argv[1] + '/todos')
+response = requests.get('https://jsonplaceholder.typicode.com/users/{}'
+                        .format(argv[1]))
+response2 = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos'
+                         .format(argv[1]))
 
 dico = response.json()
 dico2 = response2.json()
