@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     tasks_done = [task for task in dico2 if task.get('completed') is True]
 
-    with open(argv[1] + ".csv", "a") as file:
+    with open(argv[1] + ".csv", "w") as file:
         for task in dico2:
             file.write('"{},"{}","{}","{}"\n'
                        .format(argv[1], dico.get('name'),
