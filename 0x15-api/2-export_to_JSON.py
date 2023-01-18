@@ -5,10 +5,11 @@ from sys import argv
 
 if __name__ == "__main__":
     """entry"""
-    response = requests.get('https://jsonplaceholder.typicode.com/users/' +
-                        argv[1])
-    response2 = requests.get('https://jsonplaceholder.typicode.com/users/' +
-                         argv[1] + '/todos')
+    res = requests.get(
+            'https://jsonplaceholder.typicode.com/users/{}'.format(argv[1]))
+    res2 = requests.get(
+            'https://jsonplaceholder.typicode.com/users/{}/todos'
+            .format(argv[1]))
 
     dico = response.json()
     dico2 = response2.json()

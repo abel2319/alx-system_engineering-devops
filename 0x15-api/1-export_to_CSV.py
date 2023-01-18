@@ -4,14 +4,14 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    response = requests.get('https://jsonplaceholder.typicode.com/users/{}'
-                            .format(argv[1]))
-    response2 = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos'
-                             .format(argv[1]))
+    res = requests.get(
+            'https://jsonplaceholder.typicode.com/users/{}'.format(argv[1]))
+    res2 = requests.get(
+            'https://jsonplaceholder.typicode.com/users/{}/todos'.format(argv[1]))
 
-    dico = response.json()
+    dico = res.json()
 
-    dico2 = response2.json()
+    dico2 = res2.json()
 
     tasks_done = [task for task in dico2 if task.get('completed') is True]
 
