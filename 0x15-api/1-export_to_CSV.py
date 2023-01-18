@@ -7,7 +7,8 @@ if __name__ == "__main__":
     res = requests.get(
             'https://jsonplaceholder.typicode.com/users/{}'.format(argv[1]))
     res2 = requests.get(
-            'https://jsonplaceholder.typicode.com/users/{}/todos'.format(argv[1]))
+            'https://jsonplaceholder.typicode.com/users/{}/todos'
+            .format(argv[1]))
 
     dico = res.json()
 
