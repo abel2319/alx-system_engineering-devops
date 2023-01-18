@@ -19,4 +19,5 @@ if __name__ == "__main__":
     print('Employee {} is done with tasks({}/{}):'
           .format(dico.get('name'), len(tasks_done), len(dico2)))
 
-    for task in tasks_done: print('\t {}'.format(task.get('title')))
+    for task in tasks_done:
+        print('\t {}'.format(task.get('title')))
