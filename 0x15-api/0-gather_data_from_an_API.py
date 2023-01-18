@@ -7,8 +7,9 @@ if __name__ == "__main__":
     """entry"""
     response = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                             .format(sys.argv[1]))
-    response2 = requests.get('https://jsonplaceholder.typicode.com/users/
-                             {}/todos'.format(sys.argv[1]))
+    response2 = requests.get(
+            'https://jsonplaceholder.typicode.com/users/{}/todos'
+            .format(sys.argv[1]))
 
     dico = response.json()
     dico2 = response2.json()

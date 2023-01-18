@@ -20,12 +20,9 @@ def user_info(id):
         if i['userId'] == id:
             total_tasks += 1
 
-    print(total_tasks)
     num_lines = 0
-    print(str(id)+".csv")
-    with open("2.csv", 'r') as f:
+    with open(str(id) + ".csv", 'r') as f:
         for line in f:
-            print(line)
             if not line == '\n':
                 num_lines += 1
 
