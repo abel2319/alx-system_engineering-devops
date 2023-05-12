@@ -2,6 +2,7 @@
 """Reddit API and python"""
 import requests
 
+
 def number_of_subscribers(subreddit):
     """unction that queries the Reddit API and returns
     the number of subscribers
