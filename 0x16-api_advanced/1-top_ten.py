@@ -14,7 +14,8 @@ def top_ten(subreddit):
 
     dico = response.json()"""
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0)'
+    agent = 'Mozilla/5.0 (X11; Linux x86_64; rv:102.0)'
+    agent += ' Gecko/20100101 Firefox/102.0'
     headers = {"user-Agent": agent}
     response = requests.get(url, headers=headers, allow_redirects=False)
     return 0 if response.status_code != 200 else response.json()\
